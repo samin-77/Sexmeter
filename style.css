@@ -1,0 +1,108 @@
+body{
+    height: 100vh;
+    background-color:bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.love-calculator-container{
+    padding: 25px;
+    box-shadow: 1px 0px 5px 6px;
+    border-radius: 10px; 
+    min-width: 750px;
+    text-align: center;
+    background:papayawhip;
+}
+.love-calculator{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+input{
+    padding: 15px 10px;
+    border: 2px solid #243750;
+    border-radius: 10px;
+    color: #243750;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0,5s ease;
+}
+input:focus{
+    border-color:deeppink;
+    outline: none;
+}
+button{
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color:deeppink;
+    color: white;
+    cursor: pointer;
+    transition: all 0,5s ease;
+}
+/* result part */
+.result-container{
+    display: none;
+}
+
+.love-calculator{
+    display: flex;
+}
+
+.reseult-percentage-box-heart{
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+}
+.heart-container img{
+    height: 200px;
+    width: auto;
+}
+.result-percentage-box{
+    background-color: black;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 38px;
+}
+.result-percentage-box-wrapper{
+    background: conic-gradient(red 0% 14%, #e0e0e0 15% 100%);
+    height: 220px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+}
+.heart-container{
+    position: relative;
+}
+.heart-container:before{
+    content:"";
+    height: 200px;
+    width: 3px;
+    background-color: black;
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
+.result-name{
+    color:red;
+    font-size: 30px;
+    font-weight: bold;
+}
+.result-message{
+    max-width: 400px;
+    margin: auto;
+    font-size: 25px;
+}
+button:hover{
+    background-color: red;
+}
